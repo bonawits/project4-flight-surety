@@ -2,8 +2,8 @@ var Test = require("../config/testConfig.js");
 //var BigNumber = require('bignumber.js');
 
 contract("Oracles", async (accounts) => {
-  const TEST_ORACLES_COUNT = 5;
-  const IDX_FIRST_ORACLE = 5;
+  const TEST_ORACLES_COUNT = 20;
+  const IDX_FIRST_ORACLE = 1;
   var config;
   before("setup contract", async () => {
     config = await Test.Config(accounts);

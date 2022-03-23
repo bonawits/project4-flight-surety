@@ -7,7 +7,7 @@ module.exports = {
   networks: {
     development: {
       host: "127.0.0.1", // Localhost (default: none)
-      port: 8545, // 8545 = ganache-cli, 7545 = ganache gui
+      port: 7545, // 8545 = ganache-cli, 7545 = ganache gui
       network_id: "*", // Any network (default: none)
       websockets: true, // Enable EventEmitter interface for web3 (default: false)
       //gas: 10000000            // round number, easier for debugging
