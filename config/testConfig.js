@@ -17,11 +17,14 @@ var Config = async function (accounts) {
     "0x2f2899d6d35b1a48a4fbdc93a37a72f264a9fca7",
   ];
 
-  let owner = accounts[0];
-  let firstAirline = accounts[1];
+  const owner = accounts[0];
+  const firstAirline = accounts[1];
 
-  let flightSuretyData = await FlightSuretyData.new();
-  let flightSuretyApp = await FlightSuretyApp.new();
+  const flightSuretyData = await FlightSuretyData.new();
+  const flightSuretyApp = await FlightSuretyApp.new(
+    flightSuretyData.address,
+    firstAirline
+  );
 
   return {
     owner: owner,
